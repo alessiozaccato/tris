@@ -81,7 +81,8 @@ public class GamePanel extends JPanel {
             currentPlayer = "O";
             // Disabilita i pulsanti per evitare che l'utente clicchi durante il turno della
             // CPU
-            setButtonsEnabled(false);
+            // Non disabilitare i bottoni, ma ignora i click quando non è il turno del
+            // player
 
             // Crea un Timer per introdurre un ritardo prima della mossa della CPU (migliora
             // l'esperienza utente)
@@ -132,26 +133,11 @@ public class GamePanel extends JPanel {
             } else {
                 // Se la partita continua, passa il turno al giocatore umano
                 currentPlayer = "X";
-                setButtonsEnabled(true); // Riabilita i pulsanti per l'utente
+                // Nessuna azione: i bottoni restano sempre abilitati
             }
         }
     }
 
-    /**
-     * Abilita o disabilita i pulsanti vuoti della griglia.
-     * Viene usato per "bloccare" l'utente durante il turno della CPU.
-     * 
-     * @param enabled Se true, abilita i pulsanti; se false, li disabilita.
-     */
-    private void setButtonsEnabled(boolean enabled) {
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                if (buttons[i][j].getText().isEmpty()) {
-                    buttons[i][j].setEnabled(enabled);
-                }
-            }
-        }
-    }
 
     /**
      * Controlla se uno dei giocatori ha vinto la partita.

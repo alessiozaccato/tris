@@ -9,6 +9,7 @@ Il Tris è un gioco da tavolo su griglia 3x3. In questa versione giochi contro l
 - **CPU** (O, colore rosso)
 Vince chi allinea 3 simboli in orizzontale, verticale o diagonale. Se la griglia si riempie senza vincitori, la partita è pari.
 
+![Gameplay di Tic-Tac-Toe](screenshots/gameplay.gif)
 
 ## 🚀 Avvio del progetto
 

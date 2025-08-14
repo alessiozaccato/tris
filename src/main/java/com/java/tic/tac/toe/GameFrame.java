@@ -26,7 +26,7 @@ public class GameFrame {
         // Imposta le proprietà base della finestra
         frame = new JFrame("Tris - Tic-Tac-Toe");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Termina il programma quando si chiude la finestra
-        frame.setSize(400, 450); // Imposta le dimensioni della finestra
+        frame.setSize(600, 600); // Imposta le dimensioni della finestra
         frame.setLocationRelativeTo(null); // Centra la finestra sullo schermo
         
         // Mostra la schermata iniziale all'avvio

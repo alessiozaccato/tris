@@ -53,7 +53,7 @@ public class GameFrame {
         JButton startButton = new JButton("Nuova Partita");
         startButton.setFont(new Font("Arial", Font.PLAIN, 24));
         // Aggiunge un ActionListener che avvia il gioco al click
-        startButton.addActionListener(e -> startGame());
+        startButton.addActionListener(_ -> startGame());
         
         // Crea un pannello per il pulsante e lo aggiunge a startPanel
         JPanel buttonPanel = new JPanel();
@@ -111,7 +111,7 @@ public class GameFrame {
         JButton playAgain = new JButton("Gioca ancora");
         playAgain.setFont(new Font("Arial", Font.PLAIN, 20));
         // Aggiunge un ActionListener che resetta la partita al click
-        playAgain.addActionListener(e -> gamePanel.resetGame());
+        playAgain.addActionListener(_ -> gamePanel.resetGame());
         
         // Crea un pannello per il pulsante e lo aggiunge
         JPanel btnPanel = new JPanel();
